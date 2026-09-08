@@ -60,7 +60,7 @@
 				<!-- News -->
 				<section  id="news">
 					<h2>News</h2>
-					<ul>
+					<ul id="news-list" class="news-list">
 						<li>[09/2026] Our works (<i>RoboPocket, Lift, MAESTRO, HuMI, FTP1, AnyDexRT</i>) were accepted by CoRL 2026!</li>
 						<li>[07/2026] Two papers (<i>ARMADA</i> and <i>ImplicitRDP</i>) were accepted by RA-L 2026!</li>
 						<li>[06/2026] Our paper <i>FP3: A 3D Foundation Policy for Robotic Manipulation</i> was hornored as the best paper finalist on Robot Learning at ICRA 2026! Congratulations to all the collaborators!</li>
@@ -70,20 +70,6 @@
 						<li>[01/2026] Our paper <i>Translating Flow to Policy via Hindsight Online Imitation</i> was accepted by ICLR 2026!</li>
 						<li>[09/2025] Two papers (<i>EfficientVLA, FFCP</i>) were accepted by NeurIPS 2025!</li>
 						<li>[08/2025] Our paper <i>KineDex: Learning Tactile-Informed Visuomotor Policies via Kinesthetic Teaching for Dexterous Manipulation</i> was accepted by CoRL 2025!</li>
-						<li>[07/2026] Our paper <i>Rethinking Camera Choice: An Empirical Study on Fisheye Camera Properties in Robotic Manipulation</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>MotionTrans: Human VR Data Enable Motion-Level Learning for Robotic Manipulation Policies</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>FP3: A 3D Foundation Policy for Robotic Manipulation</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Translating Flow to Policy via Hindsight Online Imitation</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>EfficientVLA: Training-Free Acceleration and Compression for Vision-Language-Action Models</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>KineDex: Learning Tactile-Informed Visuomotor Policies via Kinesthetic Teaching for Dexterous Manipulation</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Data Scaling Laws in Imitation Learning for Robotic Manipulation</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>General Flow as Foundation Affordance for Scalable Robot Learning</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Any-point Trajectory Modeling for Policy Learning</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Can Transformers Capture Spatial Relations between Objects?</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Imitation Learning from Observation with Automatic Discount Scheduling</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Language Instructed Video Prediction with Latent Diffusion Models</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Predictive Inference with Feature Conformal Prediction</i> was accepted by CoRL 2026!</li>
-						<li>[07/2026] Our paper <i>Fighting Fire with Fire: Avoiding DNN Shortcuts through Priming</i> was accepted by CoRL 2026!</li>
 						<li>[07/2025] I joined SJTU as a tenure-track Assistant Professor!</li>
 						<li>[06/2025] I graduated from Tsinghua University with my Ph.D. degree! Huge thanks to my advisor Prof. Yang Gao and my collaborators!</li>
 						<li>[11/2024] Our paper <i>Data Scaling Laws in Imitation Learning for Robotic Manipulation</i> was accepted by ICLR 2025!</li>
@@ -101,12 +87,16 @@
 						<li>[09/2020] Our paper <i>Fighting Copycat Agents in Behavioral Cloning from Observation Histories</i> was accepted by NeurIPS 2020!</li>
 						<li>[01/2020] I started research internship at Berkeley Artificial Intelligence Research(BAIR), advised by Prof. Trevor Darrell and Prof. Yang Gao.</li>
 					</ul>
+					<button type="button" class="news-toggle" aria-controls="news-list" aria-expanded="false" title="Show all news">
+						<span class="news-toggle-icon fa fa-chevron-down" aria-hidden="true"></span>
+						<span class="sr-only">Show all news</span>
+					</button>
 				</section>
 
 
 				<!-- Publication -->
 					<section id="publication">
-						<h2>Selected Publications</h2>
+						<h2>Selected Publications / <a href="https://scholar.google.com/citations?user=G5M9nYwAAAAJ&amp;hl">Full List</a></h2>
 						<div class="row">
 							<p>
 								<span class="image left"><img src="images/project/activeglasses.png" alt="" /></span><font color="black" size=5><a href="https://arxiv.org/pdf/2604.08534">ActiveGlasses: Learning Manipulation with Active Vision from Ego-centric Human Demonstration</a></font><br />
@@ -296,6 +286,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/news.js"></script>
 
 	</body>
 </html>

@@ -2168,6 +2168,52 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		ul.news-list:not(.is-expanded) li:nth-child(n + 11) {
+			display: none;
+		}
+
+		.news-toggle {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			background: transparent;
+			border: 0;
+			color: #b2b2b2;
+			cursor: pointer;
+			display: block;
+			font-size: 1.25em;
+			margin: -1em auto 0;
+			padding: 0.5em 1em;
+			transition: color 0.2s ease-in-out;
+		}
+
+		.news-toggle:hover,
+		.news-toggle:focus {
+			color: #49bf9d;
+		}
+
+		.news-toggle[hidden] {
+			display: none;
+		}
+
+		.news-toggle:focus-visible {
+			outline: 2px solid #49bf9d;
+			outline-offset: 2px;
+		}
+
+		.sr-only {
+			border: 0;
+			clip: rect(0, 0, 0, 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			white-space: nowrap;
+			width: 1px;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
